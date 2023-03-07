@@ -25,9 +25,12 @@
               "src/assets"
             ],
             "styles": [
+              "ProyectoFinalRamosMaria/ProyectoFinalRamosMaria/node_modules/bootstrap/dist/css/bootstrap.css",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "ProyectoFinalRamosMaria/ProyectoFinalRamosMaria/node_modules/bootstrap/dist/js/bootstrap.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -94,5 +97,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "9e30d9f8-e589-4459-a3a7-80b4508a97f8"
   }
 }
