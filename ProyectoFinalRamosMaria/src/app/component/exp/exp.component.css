@@ -1,0 +1,49 @@
+.row{
+    padding: 20px;
+}
+
+div{
+    background-color: #c20f54;
+} 
+
+h1,h3{
+    display: inline;
+}
+
+/*/cambio color del titulo del trabajo/*/
+#titulodivulgacion{
+    color: whitesmoke;
+}
+
+/*/cambio color de la descripcion del trabajo/*/
+#descripciondivulgacion{
+    color: whitesmoke;
+    margin-top: 10px;
+    margin-left: 23px;
+}
+
+/*/cambio color del titulo experiencia/*/
+#exp{
+    color: whitesmoke;
+}
+
+
+@media(min-width: 576px){
+    #tecnopolis{
+        width: 60%;
+        margin-top: 10px;
+        margin-left: 30px;
+    }
+} 
+
+@media(max-width: 575px){
+    #tecnopolis{
+        width: 40%;
+        margin-top: 20px;
+        margin-left: 108px;
+        margin-bottom: 20px;
+    }
+    #exp{
+        text-align: center;
+    }
+} 
