@@ -1,6 +1,7 @@
 .row{
     padding: 20px;
     color: whitesmoke;
+    font-size: 20px;
 }
 div{
     background-color: #c20f54;
@@ -10,7 +11,7 @@ div{
 @media (min-width: 576px) {
     #foto{
         position: absolute;
-        width: 15%;
+        width: 12%;
         border-radius: 100%;
         box-shadow: 2px 2px 2px black;
         left: 3%;
