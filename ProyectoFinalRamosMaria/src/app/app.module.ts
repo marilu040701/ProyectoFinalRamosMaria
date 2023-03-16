@@ -8,6 +8,8 @@ import { BannerComponent } from './component/banner/banner.component';
 import { AcercaDeComponent } from './component/acerca-de/acerca-de.component';
 import { ExpComponent } from './component/exp/exp.component';
 import { EstudioComponent } from './component/estudio/estudio.component';
+import {NgCircleProgressModule } from 'ng-circle-progress';
+import { HysComponent } from './component/hys/hys.component'; 
 
 @NgModule({
   declarations: [
@@ -17,11 +19,13 @@ import { EstudioComponent } from './component/estudio/estudio.component';
     BannerComponent,
     AcercaDeComponent,
     ExpComponent,
-    EstudioComponent
+    EstudioComponent,
+    HysComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgCircleProgressModule.forRoot({})
   ],
   providers: [],
   bootstrap: [AppComponent]
