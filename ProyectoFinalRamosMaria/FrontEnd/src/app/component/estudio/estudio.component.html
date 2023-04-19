@@ -1,47 +1,22 @@
 <div class="row">
-    <h1 id="estudios">Estudios</h1>
-    <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2" >
-        <img src="../../../assets/facultadsinfondoo.png" id="fotofacultad">
-        <img src="../../../assets/LOGO-eestn4palomar-removebg-preview.png" id="fotoescuela">
-        <img src="../../../assets/unlam sin fondoo.png" id="fotounlam">
-        <img src="../../../assets/403 sin fondo.png" id="fotocentro">
+    <h1 id="exp">Educación</h1>
+    <div class="col-lg-2">
+        <button type="button" class="btn btn-light" routerLink="/nuevoest" *ngIf="isLogged">
+            Agregar Educación
+        </button>
     </div>
-    <div class="col-lg-10">
-        <ul>
-            <li id="facultad">
-                <h1>Licenciatura en Ciencias Geológicas</h1> - <h3>(2020 - actualidad)</h3>
-            </li>
-            <p id="descripcionfacultad">Universidad de Buenos Aires</p>
-        </ul>
-        <ul>
-            <li id="escuela">
-                <h1>Tecnicatura en Electrónica</h1> - <h3>(2014 - 2020)</h3>
-            </li>
-            <p id="descripcionescuela">Escuela de Educación Secundaria Técnica N°4 "Prof. Héctar A. Laguarde" El Palomar</p>
-        </ul>
-        <ul>
-            <li>
-                <h1>Curso de Neumática e Hidráulica</h1> - <h3>(2020)</h3>
-            </li>
-            <p id="descripcionunlam">Universidad Nacional de La Matanza - 90hs</p>
-        </ul>
-        <ul>
-            <li>
-                <h1>Curso de Gestión de la Calidad</h1> - <h3>(2020)</h3>
-            </li>
-            <p id="descripcionunlam1">Universidad Nacional de La Matanza - 80hs</p>
-        </ul>
-        <ul>
-            <li>
-                <h1>Programador de Sistemas de Interfases Gráficas</h1> - <h3>(2018)</h3>
-            </li>
-            <p id="descripcioncentro">Centro de Formación Profesional N°403</p>
-        </ul>
-        <ul>
-            <li>
-                <h1>Programador de Sistemas de Bases de Computadoras Personales</h1> - <h3>(2018)</h3>
-            </li>
-            <p id="descripcioncentro1">Centro de Formación Profesional N°403</p>
-        </ul>
+    <div class="col lg 1"></div>
+    <div class="col-lg-11">
+        <table class="table" id="divulgacion">
+            <tbody>
+                <tr *ngFor="let Estudio of estudio">
+                    <td><h2>{{Estudio.nombreE}}</h2></td>
+                    <td>{{Estudio.descripcionE}}</td>
+                    <td *ngIf="isLogged"><button class="btn btn-light" routerLink="/editest/{{Estudio.id}}"><i class="bi bi-pencil"></i> EDITAR</button></td>
+                    <td *ngIf="isLogged"><button class="btn btn-light" (click)="delete(Estudio.id)"><i class="bi bi-eraser"></i> BORRAR </button></td>
+                </tr>
+            </tbody>
+
+        </table>
     </div>
 </div>

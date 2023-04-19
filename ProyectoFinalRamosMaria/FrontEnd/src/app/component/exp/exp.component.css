@@ -7,20 +7,9 @@ div{
     background-color: #c20f54;
 } 
 
-h1,h3{
-    display: inline;
-}
-
 /*/cambio color del titulo del trabajo/*/
-#titulodivulgacion{
+#divulgacion{
     color: whitesmoke;
-}
-
-/*/cambio color de la descripcion del trabajo/*/
-#descripciondivulgacion{
-    color: whitesmoke;
-    margin-top: 10px;
-    margin-left: 23px;
 }
 
 /*/cambio color del titulo experiencia/*/

@@ -9,7 +9,8 @@
             <a href="https://twitter.com/marilu0407?t=ZLoz7kH3kf5Ui6i_C18_UQ&s=08"><img src="../../../assets/twitter.png" id="twitter"></a>
             <a href="https://www.facebook.com/mariluuu004/"><img src="../../../assets/facebook.png" id="facebook"></a>
             <a href="https://github.com/marilu040701"><img src="../../../assets/github.png" id="github"></a>
-            <button type="button" class="btn btn-outline-ligth">INGRESO</button>
+            <button type="button" class="btn btn-outline-ligth" (click)="login()" *ngIf="!isLogged">INGRESO</button>
+            <button type="button" class="btn btn-outline-ligth" (click)="onLogOut()" *ngIf="isLogged">CERRAR SESION</button>
         </div>
     </div>
 </div>
