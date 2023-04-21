@@ -105,7 +105,6 @@
                     </excludes>
                 </configuration>
             </plugin>
-            
             <plugin>
                 <!-- corrige el error de "Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.12:test (default-test)"-->  
 
