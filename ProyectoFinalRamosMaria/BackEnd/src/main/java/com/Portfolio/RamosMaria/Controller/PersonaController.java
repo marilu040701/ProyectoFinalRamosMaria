@@ -43,9 +43,10 @@ public class PersonaController {
         return new ResponseEntity(persona, HttpStatus.OK);
     }
 
-    @PostMapping("/create")
-    public void save(@RequestBody Persona persona) {
+    @PostMapping("/crear")
+    public String createPersona(@RequestBody Persona persona) {
         personaService.save(persona);
+        return "La persona fue creada correctamente";
     }
 
     @DeleteMapping("/delete/{id}")
