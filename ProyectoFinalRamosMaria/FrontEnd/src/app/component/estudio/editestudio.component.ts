@@ -10,11 +10,11 @@ import { EstudioService } from 'src/app/service/estudio.service';
 })
 export class EditestudioComponent implements OnInit {
   estudio: Estudio = null;
-  constructor(private estudioS: EstudioService, private activatedRour: ActivatedRoute, private router: Router) {
+  constructor(private estudioS: EstudioService, private activatedRouter: ActivatedRoute, private router: Router) {
   }
 
   ngOnInit(): void {
-    const id = this.activatedRour.snapshot.params['id'];
+    const id = this.activatedRouter.snapshot.params['id'];
     this.estudioS.detail(id).subscribe({
       next: (data) => {
         this.estudio = data;
@@ -26,7 +26,7 @@ export class EditestudioComponent implements OnInit {
   }
 
   onUpdate(): void {
-    const id = this.activatedRour.snapshot.params['id'];
+    const id = this.activatedRouter.snapshot.params['id'];
     this.estudioS.update(id, this.estudio).subscribe({
       next: (data) => {
         this.router.navigate(['']);
