@@ -14,7 +14,8 @@ export const environment = {
   },
 
   production: false,
-  URL: 'http://localhost:8080/'
+  /*/URL: 'http://localhost:8080/' /*/
+  URL: 'https://fashionable-pearla-marilu040701.koyeb.app/'
   
 };
 
