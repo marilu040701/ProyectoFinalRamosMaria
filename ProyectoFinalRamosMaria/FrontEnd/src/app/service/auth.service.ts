@@ -10,6 +10,7 @@ import { environment } from 'src/environments/environment';
   providedIn: 'root'
 })
 export class AuthService {
+  authURL = 'https://fashionable-pearla-marilu040701.koyeb.app/auth/';
   URL = environment.URL +'auth/';
 
 
