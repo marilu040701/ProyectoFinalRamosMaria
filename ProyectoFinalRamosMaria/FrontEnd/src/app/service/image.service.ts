@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+/*/import { Injectable } from '@angular/core';
 import { Storage, getDownloadURL, list, ref, uploadBytes} from '@angular/fire/storage'
 
 @Injectable({
@@ -33,5 +33,4 @@ export class ImageService {
     })
     .catch(error => console.log(error))
   }
-}
-
+}/*/
