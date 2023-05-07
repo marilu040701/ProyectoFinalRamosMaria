@@ -17,9 +17,9 @@ export class EditAcercaDeComponent implements OnInit{
   ngOnInit(): void{
     const id = this.activatedRouter.snapshot.params['id'];
     this.personaService.detail(id).subscribe({
-      next: (data) => {
+      next: data => {
         this.persona = data;
-      }, error: (err) => {
+      }, error: err => {
         alert("Error al modificar");
         this.router.navigate(['']);
       }
@@ -29,9 +29,9 @@ export class EditAcercaDeComponent implements OnInit{
     const id = this.activatedRouter.snapshot.params['id'];
     /*/this.persona.img = this.imageService.url/*/
     this.personaService.update(id, this.persona).subscribe({
-      next: (data) => {
+      next: data => {
         this.router.navigate(['']);
-      }, error: (err) => {
+      }, error: err => {
         alert("Error al modificar la persona");
         this.router.navigate(['']);
       }
